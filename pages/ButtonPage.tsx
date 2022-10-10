@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 
 const ButtonPage: NextPage = () => {
-	return <div>HAJSAN</div>;
+	return <div>AFASFFAf</div>;
 };
 
 export default ButtonPage;
