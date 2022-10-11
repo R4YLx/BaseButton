@@ -5,8 +5,19 @@
 .button {
   color: rgb(0, 0, 0);
   background-color: rgb(242, 242, 234);
-  padding: 15px;
+  padding: 20px;
   border-radius: 10px;
   border: none;
   font-weight: 600;
+  text-align: center;
+}
+
+.buttonSmall {
+  @extend .button;
+  padding: 10px;
+}
+
+.buttonMedium {
+  @extend .button;
+  padding: 15px;
 }
