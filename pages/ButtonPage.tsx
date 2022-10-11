@@ -1,7 +1,7 @@
-import { NextPage } from "next";
+import { NextPage } from 'next'
 
 const ButtonPage: NextPage = () => {
-	return <div>AFASFFAf</div>;
-};
+  return <div>AFASFFAf</div>
+}
 
-export default ButtonPage;
+export default ButtonPage
