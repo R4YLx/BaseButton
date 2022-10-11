@@ -1,12 +1,10 @@
 import React from "react";
 
-export interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface IButtonProps extends React.ComponentProps<"button"> {
     text: string
-    children: React.ReactNode
     href?: string
     target?: string
-    size: "m" | "m"
+    size: "s" | "m"
     isFluid?: boolean
-    className: string
     as: "a" | "button"
 }
