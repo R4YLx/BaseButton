@@ -2,7 +2,7 @@ import { Props } from './types'
 import styles from './Button.module.scss'
 import clsx from 'clsx'
 
-const BaseButton = ({ text, href, target, size, isFluid }: Props) => {
+const BaseButton = ({ text, href, target, size, isFluid, ...buttonProps }: Props) => {
   const propStyles = clsx({
     [styles.fullWidth]: isFluid,
     [styles.buttonMedium]: size === 'm',
@@ -14,7 +14,7 @@ const BaseButton = ({ text, href, target, size, isFluid }: Props) => {
       {text}
     </a>
   ) : (
-    <button className={`${propStyles} ${styles.button}`}>{text}</button>
+    <button {...buttonProps} className={`${propStyles} ${styles.button}`}>{text}</button>
   )
 }
 

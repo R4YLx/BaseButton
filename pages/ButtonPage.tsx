@@ -6,7 +6,7 @@ const ButtonPage: NextPage = () => {
   return (
     <div className={styles.flexContainer}>
       <BaseButton href="/" target="/" text="I'm an anchor" />
-      <BaseButton text="I'm a button" />
+      <BaseButton onClick={() => alert("hello")} text="I'm a button" />
     </div>
   )
 }
