@@ -1,8 +1,8 @@
-import { IButtonProps } from './interface'
+import { Props } from './types'
 import styles from './Button.module.scss'
 import clsx from 'clsx'
 
-const BaseButton = ({ text, href, target, size, isFluid }: IButtonProps) => {
+const BaseButton = ({ text, href, target, size, isFluid }: Props) => {
   const propStyles = clsx({
     [styles.fullWidth]: isFluid,
     [styles.buttonMedium]: size === 'm',
