@@ -1,7 +1,7 @@
-import { IButtonProps } from './interface'
+import { Props } from './types'
 import styles from './Button.module.scss'
 
-const BaseButton = ({ text, href, target, size, isFluid }: IButtonProps) => {
+const BaseButton = ({ text, href, target, size, isFluid }: Props) => {
   return href ? (
     <a href={href} className={styles.button} target={target}>
       {text}
