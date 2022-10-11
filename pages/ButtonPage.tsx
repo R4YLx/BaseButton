@@ -5,7 +5,8 @@ import styles from '../styles/Home.module.css'
 const ButtonPage: NextPage = () => {
   return (
     <div className={styles.flexContainer}>
-      <BaseButton href="/" text="Hello" size="m" />
+      <BaseButton href="/" text="Anchor" size="m" />
+      <BaseButton text="Button" size="m" />
     </div>
   )
 }
