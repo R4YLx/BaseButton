@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 export interface IButtonProps extends React.ComponentProps<"button"> {
     text: string
