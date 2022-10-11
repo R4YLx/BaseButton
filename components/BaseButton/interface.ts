@@ -6,4 +6,5 @@ export interface IButtonProps extends React.ComponentProps<'button'> {
   target?: string
   size?: 's' | 'm'
   isFluid?: boolean
+  // as?: "a" | "button"
 }
