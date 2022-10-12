@@ -1,0 +1,29 @@
+.fullWidth {
+  width: 100%;
+}
+
+.button {
+  color: rgb(0, 0, 0);
+  background-color: rgb(242, 242, 234);
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.buttonSmall {
+  @extend .button;
+  padding: 10px;
+}
+
+.buttonMedium {
+  @extend .button;
+  padding: 15px;
+}
+
+a {
+  text-decoration: none;
+}
