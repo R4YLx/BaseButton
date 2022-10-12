@@ -1,10 +1,21 @@
 import React from 'react'
 
-export interface IButtonProps extends React.ComponentProps<'button'> {
+export interface ButtonProps {
   text: string
-  href?: string
-  target?: string
   size?: 's' | 'm'
   isFluid?: boolean
-  // as?: "a" | "button"
 }
+
+export interface IAnchor
+  extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
+    ButtonProps {
+  href: string
+}
+
+export interface IButton
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    ButtonProps {
+  href?: undefined
+}
+
+export type ButtonType = IAnchor | IButton
