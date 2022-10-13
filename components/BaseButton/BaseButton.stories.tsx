@@ -3,7 +3,6 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 
 import BaseButton from './BaseButton'
 
-
 export default {
   title: 'Kruso/BaseButton',
   component: BaseButton,
@@ -18,14 +17,14 @@ export default {
   }
 } as ComponentMeta<typeof BaseButton>
 
-
 const Template: ComponentStory<typeof BaseButton> = (args) => (
   <BaseButton {...args} />
 )
 
 export const Base = Template.bind({})
 Base.args = {
-  label: 'BaseButton'
+  label: 'BaseButton',
+  foo: 'asdafaa'
 }
 
 export const Anchor = Template.bind({})
