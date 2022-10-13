@@ -1,5 +1,5 @@
 import { NextPage } from 'next'
-import BaseButton from '../components/BaseButton/BaseButton'
+import BaseButton from '../components/BaseButton'
 import styles from '../styles/Home.module.css'
 
 const ButtonPage: NextPage = () => {
@@ -10,9 +10,17 @@ const ButtonPage: NextPage = () => {
         target="_blank"
         text="I'm an anchor"
         aria-label="link"
+        rel="asdasd"
+        type="reset"
       />
 
-      <BaseButton text="I'm a button" onClick={() => alert('hej')} />
+      <BaseButton
+        text="I'm a button"
+        onClick={() => alert('hej')}
+        rel="asdasd"
+        autoFocus
+        type="submit"
+      />
 
       <BaseButton size="s" text="I'm a small button" />
 
