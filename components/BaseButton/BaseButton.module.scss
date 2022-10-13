@@ -12,6 +12,7 @@
   text-align: center;
   font-size: 18px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .buttonSmall {
@@ -23,3 +24,7 @@
   @extend .button;
   padding: 15px;
 }
+
+// a {
+//   text-decoration: none;
+// }

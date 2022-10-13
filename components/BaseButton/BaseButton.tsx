@@ -15,7 +15,7 @@ const BaseButton = ({ text, size, isFluid, ...rest }: ButtonProp) => {
 
   const tProps = rest as ButtonProp
 
-  console.log('hasRef(tProps', hasRef(tProps))
+  // console.log('hasRef(tProps', hasRef(tProps))
 
   if (hasRef(tProps)) {
     return (
