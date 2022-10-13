@@ -1,25 +1,29 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { BaseButton } from './BaseButton'
+import BaseButton from './BaseButton'
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
+
 export default {
   title: 'Kruso/BaseButton',
   component: BaseButton,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
+  args: {
+    text: "Button"
+  },
   argTypes: {
-    backgroundColor: { control: 'color' }
+    text: {
+      options: ['Short text', 'Longer button text jao'],
+      control: { type: 'select' }
+    }
   }
 } as ComponentMeta<typeof BaseButton>
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
+
 const Template: ComponentStory<typeof BaseButton> = (args) => (
   <BaseButton {...args} />
 )
 
 export const Base = Template.bind({})
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
 Base.args = {
   label: 'BaseButton'
 }

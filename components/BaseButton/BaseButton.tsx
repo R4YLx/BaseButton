@@ -1,5 +1,5 @@
-import { AnchorProps, ButtonProps } from './interface'
-import styles from './Button.module.scss'
+import { AnchorProps, ButtonProps } from './BaseButton.interface'
+import styles from './BaseButton.module.scss'
 import clsx from 'clsx'
 
 const BaseButton = ({
