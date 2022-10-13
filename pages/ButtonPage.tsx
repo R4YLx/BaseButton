@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 import BaseButton from '../components/BaseButton'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 const ButtonPage: NextPage = () => {
   return (

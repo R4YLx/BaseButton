@@ -7,8 +7,8 @@ export default {
   title: 'Kruso/BaseButton',
   component: BaseButton,
 
-  argTypes: {
-    backgroundColor: { control: 'color' }
+  args: {
+    text: 'Button'
   }
 } as ComponentMeta<typeof BaseButton>
 
