@@ -6,9 +6,14 @@ import BaseButton from './BaseButton'
 export default {
   title: 'Kruso/BaseButton',
   component: BaseButton,
-
+  args: {
+    text: "Button"
+  },
   argTypes: {
-    backgroundColor: { control: 'color' }
+    text: {
+      options: ['Short text', 'Longer button text jao'],
+      control: { type: 'select' }
+    }
   }
 } as ComponentMeta<typeof BaseButton>
 
@@ -17,7 +22,6 @@ const Template: ComponentStory<typeof BaseButton> = (args) => (
 )
 
 export const Base = Template.bind({})
-
 Base.args = {
   label: 'BaseButton',
   foo: 'asdafaa'
