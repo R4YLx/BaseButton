@@ -5,22 +5,9 @@ import styles from '../styles/Home.module.css'
 const ButtonPage: NextPage = () => {
   return (
     <div className={styles.flexContainer}>
-      <BaseButton
-        href="/"
-        target="_blank"
-        text="I'm an anchor"
-        aria-label="link"
-        rel="asdasd"
-        type="reset"
-      />
+      <BaseButton href="/" target="_blank" text="I'm an anchor" />
 
-      <BaseButton
-        text="I'm a button"
-        onClick={() => alert('hej')}
-        rel="asdasd"
-        autoFocus
-        type="submit"
-      />
+      <BaseButton text="I'm a button" onClick={() => alert('hej')} />
 
       <BaseButton size="s" text="I'm a small button" />
 
