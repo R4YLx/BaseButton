@@ -11,19 +11,19 @@ interface BaseButtonProps {
   isFluid?: boolean
 }
 
-export interface AnchorProps
+export interface AnchorElementProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
     BaseButtonProps {
-  href?: AnchorElementAttributes['href']
+  href: AnchorElementAttributes['href']
 }
 
-export interface ButtonProps
+export interface ButtonElementProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     BaseButtonProps {
   href?: undefined
 }
 
-export type ButtonProp = AnchorProps | ButtonProps
+export type ButtonProps = AnchorElementProps | ButtonElementProps
 
 // export type BaseProps = BaseButtonProps & (AnchorProps | ButtonProps)
 
